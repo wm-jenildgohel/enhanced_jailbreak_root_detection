@@ -192,3 +192,6 @@ lint/tmp/
 # Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspec-lock.
 /pubspec.lock
 .dart_tool/
+
+# Environment variables
+.env
