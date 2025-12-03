@@ -26,7 +26,7 @@ In your flutter project add the dependency:
 
 ```yaml
 dependencies:
-  enhanced_jailbreak_root_detection: ^0.0.2
+  enhanced_jailbreak_root_detection: ^0.0.1
 ```
 
 Or use it directly from GitHub:
