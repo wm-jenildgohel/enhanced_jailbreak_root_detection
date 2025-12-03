@@ -1,3 +1,26 @@
+## 0.0.2
+
+* **BREAKING**: Package renamed from `jailbreak_root_detection` to `enhanced_jailbreak_root_detection`
+* Fixed deprecated package attribute in AndroidManifest.xml for Android Gradle Plugin compatibility
+* Updated all Kotlin package paths from `com.w3conext.jailbreak_root_detection` to `com.w3conext.enhanced_jailbreak_root_detection`
+* Updated JNI native function names in C++ code to match new package structure
+* Fixed iOS podspec and Swift module imports to use new package name
+* Updated example app with new package name and configuration
+* This is an enhanced fork of the original [jailbreak_root_detection](https://github.com/w3connext/jailbreak_root_detection) package
+
+## 0.0.1
+
+* Initial release as enhanced fork
+* Inherited all features from jailbreak_root_detection v1.2.0+1
+* Uses RootBeer + DetectFrida for Android root detection
+* Uses IOSSecuritySuite (~> 1.9.10) for iOS jailbreak detection
+* Supports 16KB page sizes on Android
+* Includes Frida detection and debugger checks
+
+---
+
+## Previous Versions (from original jailbreak_root_detection package)
+
 ## 1.2.0+1
 
 * Improve Android and SDK Compatibility Without Over-Upgrading
