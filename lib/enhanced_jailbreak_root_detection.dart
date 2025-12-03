@@ -52,14 +52,14 @@ enum JailbreakIssue {
   }
 }
 
-class JailbreakRootDetection {
+class EnhancedJailbreakRootDetection {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('jailbreak_root_detection');
+  final methodChannel = const MethodChannel('enhanced_jailbreak_root_detection');
 
-  static final JailbreakRootDetection _instance = JailbreakRootDetection();
+  static final EnhancedJailbreakRootDetection _instance = EnhancedJailbreakRootDetection();
 
-  static JailbreakRootDetection get instance => _instance;
+  static EnhancedJailbreakRootDetection get instance => _instance;
 
   Future<List<JailbreakIssue>> get checkForIssues async {
     final issues =

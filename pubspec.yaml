@@ -1,6 +1,6 @@
-name: jailbreak_root_detection
+name: enhanced_jailbreak_root_detection
 description: Uses RootBeer + DetectFrida for Android root detection and IOSSecuritySuite for iOS jailbreak detection.
-version: 1.2.0+1
+version: 0.0.1
 homepage: https://github.com/w3connext/jailbreak_root_detection
 
 environment:
@@ -34,7 +34,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.w3conext.jailbreak_root_detection
+        package: com.w3conext.enhanced_jailbreak_root_detection
         pluginClass: JailbreakRootDetectionPlugin
       ios:
         pluginClass: JailbreakRootDetectionPlugin

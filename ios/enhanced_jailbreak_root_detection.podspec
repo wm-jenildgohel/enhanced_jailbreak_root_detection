@@ -4,13 +4,13 @@
 # Run `pod install --repo-update --verbose` to uppdate new version.
 #
 Pod::Spec.new do |s|
-  s.name             = 'jailbreak_root_detection'
+  s.name             = 'enhanced_jailbreak_root_detection'
   s.version          = '1.0.1'
   s.summary          = 'Check Jailbreak and Rooted for Android and iOS.'
   s.description      = <<-DESC
 Check Jailbreak and Rooted for Android and iOS.
                        DESC
-  s.homepage         = 'https://github.com/w3connext/jailbreak_root_detection'
+  s.homepage         = 'https://github.com/w3connext/enhanced_jailbreak_root_detection'
   s.license          = { :file => '../LICENSE' }
   s.author           = 'w3connext'
   s.source           = { :path => '.' }

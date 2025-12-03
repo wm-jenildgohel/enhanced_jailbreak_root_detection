@@ -15,14 +15,14 @@ allprojects {
     }
 }
 
-group 'com.w3conext.jailbreak_root_detection'
+group 'com.w3conext.enhanced_jailbreak_root_detection'
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.w3conext.jailbreak_root_detection'
+        namespace 'com.w3conext.enhanced_jailbreak_root_detection'
     }
 
     compileSdkVersion 34
@@ -44,6 +44,15 @@ android {
     defaultConfig {
         minSdkVersion 21
     }
+
+    // For AGP 8.3.0: Use compressed libraries to ensure proper packaging
+    // for 16KB page size support
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+
     lintOptions {
         disable 'InvalidPackage'
     }

@@ -1,4 +1,4 @@
-package com.w3conext.jailbreak_root_detection.devmode
+package com.w3conext.enhanced_jailbreak_root_detection.devmode
 
 import android.content.Context
 import android.provider.Settings
