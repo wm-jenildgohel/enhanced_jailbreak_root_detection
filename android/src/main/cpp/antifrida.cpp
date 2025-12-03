@@ -176,7 +176,7 @@ int find_mem_string(uint64_t base, uint64_t end, unsigned char *ptr, unsigned in
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkFridaByPort(
+Java_com_w3conext_enhanced_1jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkFridaByPort(
         JNIEnv *env, jobject thiz, jint port) {
     unused_param(thiz);
     struct sockaddr_in sa{};
@@ -196,7 +196,7 @@ Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkFr
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkBeingDebugged(
+Java_com_w3conext_enhanced_1jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkBeingDebugged(
         JNIEnv *env, jobject thiz, jboolean use_customized_syscall) {
 
     long res = use_customized_syscall ? my_ptrace(PTRACE_TRACEME, 0) : ptrace(PTRACE_TRACEME, 0);
@@ -205,7 +205,7 @@ Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_checkBe
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_nativeReadProcMaps(
+Java_com_w3conext_enhanced_1jailbreak_1root_1detection_frida_AntiFridaNativeLoader_nativeReadProcMaps(
         JNIEnv *env, jobject thiz, jboolean useCustomizedSyscall) {
     char *data = nullptr;
     size_t data_size = 0;
@@ -232,7 +232,7 @@ Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_nativeR
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_w3conext_jailbreak_1root_1detection_frida_AntiFridaNativeLoader_scanModulesForSignature(
+Java_com_w3conext_enhanced_1jailbreak_1root_1detection_frida_AntiFridaNativeLoader_scanModulesForSignature(
         JNIEnv *env, jobject thiz, jstring signature, jboolean use_customized_sys_calls) {
     int fd = use_customized_sys_calls ? my_openat(AT_FDCWD, MAPS_FILE, O_RDONLY | O_CLOEXEC, 0)
                                       : openat(AT_FDCWD, MAPS_FILE, O_RDONLY | O_CLOEXEC, 0);
