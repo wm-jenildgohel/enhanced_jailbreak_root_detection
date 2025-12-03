@@ -1,0 +1,45 @@
+# IDE files
+.idea/
+*.iml
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Build artifacts
+build/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Local configuration
+.vscode/
+.claude/
+
+# Android build files
+android/.gradle/
+android/.cxx/
+android/local.properties
+android/captures/
+android/build/
+
+# iOS build files
+ios/.symlinks/
+ios/Pods/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.generated/
+
+# Example app dependencies
+example/.dart_tool/
+example/.packages
+example/build/
+example/ios/Pods/
+example/ios/.symlinks/
+example/android/build/
+example/android/.gradle/
+example/android/.cxx/
+example/android/local.properties
+example/pubspec.lock
