@@ -1,3 +1,4 @@
+import 'dart:developer' as developer;
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -49,32 +50,32 @@ class _MyAppState extends State<MyApp> {
     _result = '';
     final isNotTrust = await EnhancedJailbreakRootDetection.instance.isNotTrust;
     final isRealDevice = await EnhancedJailbreakRootDetection.instance.isRealDevice;
-    print('isNotTrust: $isNotTrust');
-    print('isRealDevice: $isRealDevice');
+    developer.log('isNotTrust: $isNotTrust');
+    developer.log('isRealDevice: $isRealDevice');
     _result += 'isNotTrust: $isNotTrust\n';
     _result += 'isRealDevice: $isRealDevice\n';
     if (Platform.isAndroid) {
       try {
         bool isOnExternalStorage =
             await EnhancedJailbreakRootDetection.instance.isOnExternalStorage;
-        print('isOnExternalStorage: $isOnExternalStorage');
+        developer.log('isOnExternalStorage: $isOnExternalStorage');
         _result += 'isOnExternalStorage: $isOnExternalStorage\n';
       } catch (e) {
-        print(e);
+        developer.log('Error: $e');
       }
     }
     if (Platform.isIOS) {
       const bundleId = 'com.w3conext.jailbreakRootDetectionExample';
       final isTampered =
           await EnhancedJailbreakRootDetection.instance.isTampered(bundleId);
-      print('isTampered: $isTampered');
+      developer.log('isTampered: $isTampered');
       _result += 'isTampered: $isTampered\n';
     }
 
     final checkForIssues = await EnhancedJailbreakRootDetection.instance.checkForIssues;
-    print('checkForIssues: $checkForIssues');
+    developer.log('checkForIssues: $checkForIssues');
     for (final issue in checkForIssues) {
-      print('issue: ${issue.toString()}');
+      developer.log('issue: ${issue.toString()}');
       _result += '$issue\n';
     }
 
