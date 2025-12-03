@@ -99,9 +99,11 @@ enum JailbreakIssue {
 class EnhancedJailbreakRootDetection {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('enhanced_jailbreak_root_detection');
+  final methodChannel =
+      const MethodChannel('enhanced_jailbreak_root_detection');
 
-  static final EnhancedJailbreakRootDetection _instance = EnhancedJailbreakRootDetection();
+  static final EnhancedJailbreakRootDetection _instance =
+      EnhancedJailbreakRootDetection();
 
   /// Returns the singleton instance of [EnhancedJailbreakRootDetection].
   static EnhancedJailbreakRootDetection get instance => _instance;
