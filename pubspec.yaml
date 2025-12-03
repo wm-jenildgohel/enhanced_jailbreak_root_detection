@@ -4,6 +4,12 @@ version: 0.0.1
 homepage: https://github.com/wm-jenildgohel/enhanced_jailbreak_root_detection
 repository: https://github.com/wm-jenildgohel/enhanced_jailbreak_root_detection
 issue_tracker: https://github.com/wm-jenildgohel/enhanced_jailbreak_root_detection/issues
+topics:
+  - security
+  - jailbreak-detection
+  - root-detection
+  - device-security
+  - flutter-plugin
 
 environment:
   sdk: '>=3.5.0 <4.0.0'
