@@ -12,7 +12,7 @@
 Add the dependency to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  enhanced_jailbreak_root_detection: ^0.0.2
+  enhanced_jailbreak_root_detection: ^latest_version
 ```
 Or pull straight from GitHub:
 ```yaml
@@ -54,5 +54,3 @@ We love contributions! Open an issue or submit a PR.
 Same license as the original `jailbreak_root_detection` package.
 
 ---
-
-*This README was refreshed to be more welcoming and fun. 🎈*

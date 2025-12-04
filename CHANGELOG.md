@@ -2,7 +2,7 @@
 
 * Updated README with friendly tone and quick‑start guide.
 * Bumped package version to `0.0.2`.
-* Updated changelog.
+* Minor code cleanup.
 
 ## 0.0.1
 
