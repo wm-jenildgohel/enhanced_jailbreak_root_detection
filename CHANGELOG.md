@@ -1,3 +1,9 @@
+## 0.0.2
+
+* Updated README with friendly tone and quick‑start guide.
+* Bumped package version to `0.0.2`.
+* Updated changelog.
+
 ## 0.0.1
 
 * Initial release as enhanced fork of the original [jailbreak_root_detection](https://github.com/w3connext/jailbreak_root_detection) package
