@@ -1,6 +1,6 @@
 //
 //  JailbreakRootDetection.swift
-//  jailbreak_root_detection
+//  enhanced_jailbreak_root_detection
 //
 //  Created by M on 24/1/2566 BE.
 //

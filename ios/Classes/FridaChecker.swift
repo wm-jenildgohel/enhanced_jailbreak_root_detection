@@ -1,6 +1,6 @@
 //
 //  FridaChecker.swift
-//  jailbreak_root_detection
+//  enhanced_jailbreak_root_detection
 //
 //  Created by M on 23/1/2566 BE.
 //
